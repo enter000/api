@@ -1,0 +1,42 @@
+{
+  "name": "@enter000/api",
+  "version": "0.0.1",
+  "description": "simple template for native projects",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "NODE_ENV=development ./node_modules/.bin/parcel public/index.html --lazy --port 3000 --dist-dir build --public-url /",
+    "build": "NODE_ENV=production ./node_modules/.bin/parcel build public/index.html --dist-dir build --no-source-maps --no-cache --public-url /app",
+    "eslint": "eslint 'src/**/*{.js,.jsx}'",
+    "eslint:fix": "eslint 'src/**/*{.css,.scss}' --fix",
+    "stylelint": "stylelint 'src/**/*{.css,.scss}'",
+    "stylelint:fix": "stylelint 'src/**/*{.css,.scss}' --fix",
+    "test": "npm run eslint && npm run stylelint"
+  },
+  "author": "enter000",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "7.17.7",
+    "@parcel/resolver-glob": "2.3.2",
+    "@parcel/transformer-inline-string": "2.3.2",
+    "@parcel/transformer-postcss": "2.3.2",
+    "@parcel/transformer-sass": "2.3.2",
+    "babel-plugin-module-resolver": "4.1.0",
+    "eslint": "8.11.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-prettier": "4.0.0",
+    "parcel": "2.3.2",
+    "parcel-plugin-nuke-dist": "1.0.1",
+    "prettier": "2.6.0",
+    "prettier-eslint": "^8.2.2",
+    "stylelint": "14.6.0",
+    "stylelint-config-prettier": "9.0.3",
+    "stylelint-config-rational-order": "^0.0.4",
+    "stylelint-config-standard": "25.0.0",
+    "stylelint-config-standard-scss": "3.0.0",
+    "stylelint-order": "5.0.0",
+    "stylelint-prettier": "2.0.0",
+    "stylelint-scss": "4.2.0"
+  }
+}
