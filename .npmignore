@@ -1,1 +1,13 @@
 node_modules
+public/
+.babelrc
+.editorconfig
+.eslintrc
+.gitignore
+.htmlnanorc
+.nvmrc
+.parcelrc
+.posthtml.config.js
+.prettierrc
+.stylelintrc.js
+jsconfig.json

@@ -1,6 +1,6 @@
 {
   "name": "@enter000/api",
-  "version": "0.0.1",
+  "version": "0.3.0",
   "description": "simple template for native projects",
   "main": "src/index.js",
   "scripts": {
@@ -13,7 +13,11 @@
     "test": "npm run eslint && npm run stylelint"
   },
   "author": "enter000",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enter000/api.git"
+  },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "7.17.7",
     "@parcel/resolver-glob": "2.3.2",
@@ -38,5 +42,9 @@
     "stylelint-order": "5.0.0",
     "stylelint-prettier": "2.0.0",
     "stylelint-scss": "4.2.0"
+  },
+  "dependencies": {
+    "object-to-formdata": "^4.4.2",
+    "query-string": "^7.1.1"
   }
 }
